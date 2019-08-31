@@ -45,3 +45,8 @@ def convert_base(num, n):
     return new_num_string
 
 def factorial(number):
+    ''' Computes the Factorial of a Number. '''
+    fact_result = 1
+    for i in range(1, number+1):
+        fact_result = fact_result * i
+    return fact_result
