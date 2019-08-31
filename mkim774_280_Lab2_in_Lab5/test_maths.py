@@ -67,6 +67,13 @@ class MathsTest(unittest.TestCase):
         result = maths.convert_base(23, 13)
         # Assert
         self.assertEqual(result, '1A', "The convert_base function returned an incorrect value.")
+    
+    def test_factorial(self):
+        ''' Tests the functionality of calculation of factorial of a number of the factorial function to be added. '''
+        # Arrange & Act
+        result = maths.factorial(5)
+        # Assert
+        self.assertEqual(result, 120, "The factorial function returned an incorrect value.")
 
 # This allows running the unit tests from the command line (python test_maths.py)
 if __name__ == '__main__':
